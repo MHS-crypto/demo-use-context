@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import ValueContext from './ValueContext';
 
 
-function Child(props) {
+function Child() {
+    let value = useContext(ValueContext);
   return (
     <div >
-    HELLO  WORLD FROM CHILD  {props.num} 
+    HELLO  WORLD FROM CHILD  {value} 
       
     </div>
   );

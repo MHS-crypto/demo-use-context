@@ -2,11 +2,11 @@ import React from 'react';
 import Child from './child';
 
 
-function Parent(props) {
+function Parent() {
   return (
     <div >
     HELLO  WORLD FROM PARENT
-    <Child num = {props.num}></Child>
+    <Child></Child>
       
     </div>
   );
